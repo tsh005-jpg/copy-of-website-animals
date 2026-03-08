@@ -1,0 +1,164 @@
+* {
+    font-family: 'Roboto', "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    margin: 40px 486px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #333333;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 26px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.header-top {
+    display: flex;
+    height: 44px;
+    font-size: 13px;
+    margin-bottom: 55PX;
+    margin: 0px 450px;
+    transition: opacity 0.3s ease;
+    transition: height 0.3s ease;
+}
+
+.header-top_section {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+.header-top_section.first {
+    justify-content: left;
+}
+
+.header-top_section.social {
+    gap: 13px;
+
+}
+
+.header-top_section.social i {
+    font-size: 17px;
+    
+}
+
+.header-top_secton-2_link {
+    background-color: rgb(226, 226, 226);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    transition: background-color;
+}
+
+.header-top_secton-2_link:hover {
+    background-color: aqua;
+}
+
+.header-bottom {
+    display: flex;
+    height: 87px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 450px;
+}
+
+.header-bottom_section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header-bottom_section_item {
+    padding: 0px 15px;
+    white-space: nowrap;
+
+}
+
+.header-bottom_section_item.special-button {
+    font-size: 24px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 7px 16px;
+}
+
+.header-bottom_section.links {
+    margin-right: 50px;
+}
+
+.header-bottom_section_item img {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.header-bottom_section_images {
+    position: relative;
+}
+
+.header-bottom_section_item_slide {
+    position: absolute;
+    height: 87px;
+    width: 87px;
+    top: 6px;
+    transition: height 0.3s ease, width 0.3s ease;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 6px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* hero start */
+
+.hero {
+    height: 626px;
+}
+
+.hero-image {
+    height: 100%;
+}
+
+.center{
+    text-align: center;
+    
+}
+
+.center h1 {
+    margin-bottom: 8px;
+}
