@@ -17,6 +17,10 @@ header {
     font-weight: 500;
 }
 
+table {
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -113,6 +117,21 @@ h2 {
     font-weight: bold;
     padding: 7px 16px;
 }
+.header-bottom_section_item.special-button.orangeb {
+    background-color: rgb(225, 146, 0);
+}
+
+.header-bottom_section_item.special-button.pinkb {
+    background-color: rgb(228, 135, 151);
+}
+
+.header-bottom_section_item.special-button.orangeb:hover {
+    background-color: rgb(184, 90, 2) ;
+}
+
+.header-bottom_section_item.special-button.pinkb:hover {
+    background-color: rgb(218, 95, 116);
+}
 
 .header-bottom_section.links {
     margin-right: 50px;
@@ -183,6 +202,10 @@ h2 {
     position: absolute;
     bottom: 120px;
     left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
 }
 
 .hero-title {
@@ -312,6 +335,7 @@ h2 {
 .cards-section {
     padding: 40px max(40px, calc((100vw - 1200px) / 2));
     margin: 0;
+    background-color: rgba(242, 242, 242);
 }
 
 .cards-grid {
@@ -371,3 +395,27 @@ h2 {
     font-size: 16px;
     font-weight: 700;
 }
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.footer-foot {
+
+}
+
+.footer-title {
+    background-color: transparent;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.footer-foot hr {
+    width: 510px;
+    margin: 0 auto;
+}
+
+.foo
