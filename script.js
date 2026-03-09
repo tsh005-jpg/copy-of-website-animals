@@ -10,6 +10,7 @@ setInterval(() => {
 const headerTop = document.querySelector('.header-top');
 const headerBottom = document.querySelector('.header-bottom');
 const logo = document.querySelector('.header-bottom_section_item_slide');
+const scrollTop = document.querySelector('.scroll-top');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
@@ -18,12 +19,14 @@ window.addEventListener('scroll', () => {
     headerTop.style.opacity = '0';
     headerTop.style.maxHeight = '0';
     headerTop.style.pointerEvents = 'none';
+    scrollTop.style.display = 'flex';
   } else {
     logo.style.height = '87px';
     logo.style.width = '87px';
     headerTop.style.opacity = '1';
     headerTop.style.maxHeight = '44px';
     headerTop.style.pointerEvents = 'auto';
+    scrollTop.style.display = 'none';
   }
 });
 

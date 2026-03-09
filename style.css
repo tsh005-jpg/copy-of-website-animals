@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -117,6 +121,7 @@ h2 {
     font-weight: bold;
     padding: 7px 16px;
 }
+
 .header-bottom_section_item.special-button.orangeb {
     background-color: rgb(225, 146, 0);
 }
@@ -126,7 +131,7 @@ h2 {
 }
 
 .header-bottom_section_item.special-button.orangeb:hover {
-    background-color: rgb(184, 90, 2) ;
+    background-color: rgb(184, 90, 2);
 }
 
 .header-bottom_section_item.special-button.pinkb:hover {
@@ -342,8 +347,8 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    max-width: 900px; 
-    margin: 0 auto;  
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .card {
@@ -396,26 +401,99 @@ h2 {
     font-weight: 700;
 }
 
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #2d2d2d;
+    color: rgb(81, 81, 81);
+    font-size: 30px;
+    border-radius: 0%;
+}
+
 .row {
     margin-left: -15px;
     margin-right: -15px;
 }
 
-.footer-foot {
-
+.row {
+    background-color: #e4e4e4;
 }
 
 .footer-title {
     background-color: transparent;
     font-size: 18px;
     margin: 0;
-    padding-bottom: 15px;
+    padding: 35px 0px 20px 0px;
     text-align: center;
 }
 
+.footer-title a {
+    color: #5cb8e6;
+}
+
 .footer-foot hr {
-    width: 510px;
+    width: 600px;
     margin: 0 auto;
 }
 
-.foo
+.footer-foot_organisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.footer-foot_organisation_logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    top: 20px;
+
+}
+
+.footer-foot_organisation_logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.footer-foot_organisation_logo p {
+    font-size: 10px;
+    color: #555;
+    line-height: 1.4;
+    padding-top: 1px;
+}
+
+.footer-foot_organisation_logo_copyright {
+    opacity: 0;
+    position: absolute;
+    background-color: aliceblue;
+    top: 32px;
+    right: 11px;
+    padding-top: 10px;
+}
+
+.footer-foot_organisation_logo:hover .footer-foot_organisation_logo_copyright {
+    opacity: 1;
+}
+
+.row table {
+    text-align: left;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 73px 10px;
+}
+
+.footer-foot-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
